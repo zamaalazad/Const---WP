@@ -1,0 +1,23 @@
+
+/* Framework CSS Linked here */
+
+@import url(font-awesome.min.css);
+
+
+/* Regular stylesheet */
+
+@import url(regular.css);
+
+
+/* Homepage CSS here */
+
+@import url(home.css);
+
+
+/* Articles CSS Here */
+
+@import url(articles.css);
+
+/* Post CSS Here */
+
+@import url(post.css)

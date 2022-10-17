@@ -1,0 +1,178 @@
+/* Logo Code getting from home.css file */
+.article > nav{
+	display: flex;
+	justify-content: center;
+}
+.article nav ul{
+	display: flex;
+}
+.article nav ul li{
+	align-self: flex-end;
+	padding-bottom: 10px;
+}
+.article nav ul li a{
+	padding: 5px 15px;
+	color: #ff0000;
+}
+.article nav ul li a::after{
+	content: '';
+	width: 0%;
+	height: 4px;
+	background: var(--whiteblack);
+	display: block;
+	border-radius: 4px;
+	transition: width 300ms ease-in-out;
+}
+.article nav ul li a:hover::after{
+	width: 100%;
+}
+
+/* Finished Nav Coding */
+
+
+header{
+	padding: 50px 0;
+	margin-bottom: 40px;
+}
+.search{
+	display: grid;
+	place-items: center;
+}
+
+.search h2{
+	margin: 80px 0;
+}
+
+.search h2::after{
+	content: '';
+	width: 100px;
+	height: 4px;
+	background: var(--red);
+	display: block;
+	margin: 30px auto;
+	border-radius: 4px;
+}
+
+
+/* header section coding finished here */
+
+
+.content{
+	grid-gap: 10px;
+}
+.content img{
+	width: 208px;
+	margin: 0;
+	padding: 0;
+}
+.content > .sidebar{
+	grid-column: span 1 / -1;
+}
+.content .post{
+	grid-row: 1 / 1;
+}
+
+.post-content{
+	margin-bottom: 50px;
+}
+.post-details *{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+.post-details h1{
+	font-size: 1.6em;
+}
+.post-details p,
+.post-details a{
+	margin: 5px 0;
+}
+.post-details p{
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 300;
+}
+p.author{
+	margin: 0;
+	font-size: 14px;
+}
+p.author a{
+	color: var(--red);
+}
+p.author a:hover{
+	text-decoration: underline;
+}
+.post-details > a{
+	color: var(--red);
+}
+.post-details > a:hover{
+	color: var(--whiteblack);
+}
+
+/* Article Posts Code Finished here */
+
+
+
+section.pag ul{
+	display: flex;
+}
+section.pag ul li a{
+	padding: 20px 30px;
+	margin: 5px;
+	font-size: 1.2em;
+	border-radius: 4px;
+	color: #b7b7b7;
+	box-shadow: 0 0 4px rgba(0, 0, 0, .11)
+}
+section.pag ul li a:hover{
+	background: var(--whiteblack);
+}
+
+/* Pagination Coding Finished Here */
+
+.sidebar-content > div{
+	margin-bottom: 20px;
+}
+.sidebar > section{
+	margin-bottom: 50px;
+}
+.sidebar-search form input,
+.sidebar-option{
+	border: none;
+	padding: 10px 25px;
+	width: 234px;
+}
+.sidebar-search form,
+.sidebar-option{
+	border-left: 2px solid rgba(112, 112, 112, 0.55);
+}
+.sidebar-search form input,
+.sidebar-option h1{
+	font-size: 1.1em;
+	font-family: var(--fontsofia);
+}
+.sidebar-option h1{
+	margin-top: 0;
+	font-size: 2em;
+	color: #a8a8a8;
+	text-transform: lowercase;
+}
+.sidebar-search input[type="text"]::placeholder{
+	font-family: var(--fontsofia);
+}
+.sidebar-option ul li{
+	font-size: 18px;
+	padding: 10px 0;
+}
+.sidebar-option ul li a{
+	color: var(--whiteblack);
+}
+.sidebar-option ul li a:hover{
+	color: var(--red);
+	text-decoration: underline;
+}
+.sidebar-option ul li a p{
+	font-size: 10px;
+}
+
+/* Sidebar Coding Finished Here */

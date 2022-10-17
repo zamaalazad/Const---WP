@@ -1,0 +1,111 @@
+
+/* Header CSS can you edit in Articles.css File */
+
+.post{
+	grid-gap: 40px;
+}
+.post .sidebar{
+	grid-column: span 1 / -1;
+}
+.single-post{
+	grid-row: 1 / span 1;
+	grid-gap: 20px;
+}
+.single-post > *{
+	grid-column: 2 / -2;
+}
+
+
+.square img{
+	width: 230px;
+}
+.single-post figure img{
+	max-width: 100%;
+}
+.post figure{
+	margin: 20px 0;
+}
+.post figure figcaption{
+	font-size: 10px;
+	margin-top: 4px;
+}
+.single-post aside{
+	grid-column: 1 / span 1;
+	text-align: right;
+	padding: 10px;
+	border-right: 2px solid var(--red);
+	align-self: start;
+	grid-row: span 5;
+}
+
+.single-post p{
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 300;
+	margin: 20px 0;
+}
+
+.single-post h2{
+	font-family: var(--font);
+	text-transform: uppercase;
+}
+p.author{
+	margin-bottom: 15px;
+	margin-top: -30px;
+	font-size: 14px;
+}
+p.author > a{
+	display: inline-block;
+}
+
+.single-post code{
+	background: #000000;
+	padding: 20px;
+	border-radius: 4px;
+	color: #ffffff;
+}
+
+
+/* Post CSS finished here */
+
+.sidebar{
+	margin-top: 40px;
+}
+.video-link{
+	grid-column-gap: 10px;
+}
+.video figure{
+	position: relative;
+	margin-bottom: -11px;
+	overflow: hidden;
+}
+.video figcaption{
+	position: absolute;
+	top: 100%;
+	background: rgba(0,0,0,0.2);
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+	text-align: center;
+	transition: top 400ms ease-in-out;
+}
+.video figure:hover figcaption{
+	top: -4px;
+}
+.video figcaption p{
+	color: #ffffff;
+	font-size: 14px;
+	width: 100px;
+	margin: 20px auto;
+	font-family: var(--fontsofia);
+}
+.video figcaption a{
+	background: #ffffff;
+	color: var(--red);
+	display: inline-block;
+	padding: 4px 12px;
+	text-transform: capitalize;
+	border-radius: 4px;
+}
+
+/* Video Coding Finished Here */

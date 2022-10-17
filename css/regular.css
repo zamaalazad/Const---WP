@@ -1,0 +1,96 @@
+
+@font-face {
+	font-family: 'Sofia', sans-serif;
+	src: url("fonts/Sofia-Regular.ttf") format("ttf");
+  } 
+  :root{
+	--red: #ff0000;
+	--whiteblack: #4b4b4b;
+	--whiteblue: #2700ff;
+	--font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	--fontsofia: 'Sofia', sans-serif;
+	--width: 1100px;
+} 
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: var(--font);
+}
+.sofia{
+	font-family: var(--fontsofia);
+}
+aside, div, nav, ul, li, section, header, footer, article, figure, figcaption, img, p, a, input, textarea{
+	display: block;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--fontsofia);
+}
+
+a:link,
+a:visited,
+a:focus{
+	text-decoration: none;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+img{
+	border-radius: 4px;
+}
+
+input,
+textarea{
+	font-family: var(--font);
+}
+
+/* Grid Container */
+
+.container{
+	max-width: var(--width);
+	margin: 100px auto;
+}
+.container-0{
+	max-width: var(--width);
+	margin: 0 auto;
+}
+.container1000{
+	max-width: calc(var(--width)-140px); 
+	margin: 0 auto;
+}
+.grid3{
+	display: grid;
+	grid-template-columns: 3fr 14fr 3fr;
+}
+
+.grid33{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid35{
+	display: grid;
+	grid-template-columns: 3fr 12fr 5fr;
+}
+
+.grid2{
+	display: grid;
+	grid-template-columns: 10fr 10fr;
+}
+.grid48{
+	display: grid;
+	grid-template-columns: 4fr 8fr;
+}
+.grid210{
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+}
+.grid146{
+	display: grid;
+	grid-template-columns: 14fr 6fr;
+}
